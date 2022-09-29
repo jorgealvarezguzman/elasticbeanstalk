@@ -4,8 +4,8 @@
 
 2. Generate the CloudFormation template.
 
-    aws cloudformation package --s3-bucket <s3-bucket> --template-file elasticBeanstalkTemplate.yml --output-template-file template-generated.yml
+    `aws cloudformation package --s3-bucket <s3-bucket> --template-file elasticBeanstalkTemplate.yml --output-template-file template-generated.yml`
 
 3. Deploy the CloudFormation template.
 
-    aws cloudformation deploy --template-file template-generated.yml --stack-name sampleNodeApp --parameter-overrides KeyName=<KeyName> --capabilities CAPABILITY_IAM
+    `aws cloudformation deploy --template-file template-generated.yml --stack-name sampleNodeApp --parameter-overrides KeyName=<KeyName> --capabilities CAPABILITY_IAM`
